@@ -1,0 +1,43 @@
+@keyframes track-left-in {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.track-left-in {
+  animation: track-left-in 1s ease-out forwards;
+}
+@keyframes track-right-in {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.track-right-in {
+  animation: track-right-in 1s ease-out forwards;
+}
+
+.track-radial-gradient {
+  background: rgb(255,255,255);
+  background: -moz-radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(148,187,233,0) 100%);
+  background: -webkit-radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(148,187,233,0) 100%);
+  background: radial-gradient(circle, rgba(255,255,255,0.0800000) 0%, rgba(71, 9, 119, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#94bbe9",GradientType=1);
+}
+.track-gradient {
+background: rgb(153,20,255);
+background: -moz-linear-gradient(150deg, rgba(153,20,255,0) 85%, rgba(168, 65, 242, 0.544) 100%);
+background: -webkit-linear-gradient(150deg, rgba(153,20,255,0) 85%, rgba(163, 47, 205, 0.544) 100%);
+background: linear-gradient(140deg, rgba(153,20,255,0) 90%, rgba(255, 255, 255, 0.084) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9914ff",endColorstr="#ffffff",GradientType=1);
+}

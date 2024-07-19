@@ -1,0 +1,12 @@
+@media screen and (min-width: 650px) {
+  .toggle-menu {
+    display: none !important;
+    gap: 20px !important;
+  }
+}
+@media screen and (max-width: 651px) {
+  .toggle-menu {
+    display: block !important;
+    gap: 20px !important;
+  }
+}

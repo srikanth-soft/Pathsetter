@@ -1,0 +1,15 @@
+nav{
+    display: none !important;
+    gap: 20px !important;
+}
+
+@media screen and (min-width: 650px) {
+    nav{
+        display: block !important;
+        gap: 20px !important;
+    }
+    
+}
+.headerButton{
+    padding-right: 30px;
+}

@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+
+  background: #03091d; /* Background color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #758694; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners of the scrollbar thumb */
+  border: 3px solid #03091d; /* Padding around the scrollbar thumb */
+}
+
+/* For Firefox */
+/* html {
+  
+  scrollbar-width: thin; 
+  scrollbar-color: #758694 #03091d;
+} */
+body {
+  /* background-color: #03091d; */
+}
+/* Navbar Styles  */
+
+.nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: height 0.3s ease;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 8px 32px 0 rgba(129, 131, 152, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+/* Header section animation styles  */
+.main-container {
+  background-image: url("./assets/images/bg1.png");
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+
+}
+h1{
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* .main-container {
+  background: linear-gradient(
+      180deg,
+      rgba(14, 16, 23, 1) 0%,
+      rgba(23, 27, 41, 1) 30%,
+      rgba(40, 44, 63, 1) 60%,
+      rgba(22, 21, 35, 1) 100%
+    ),
+    radial-gradient(
+      circle at bottom center,
+      rgba(255, 165, 0, 1) 0%,
+      rgba(255, 165, 0, 0) 50%
+    ),
+    radial-gradient(
+      circle at top center,
+      rgb(248, 248, 248) 0%,
+      rgba(255, 105, 180, 0) 40%
+    ),
+    radial-gradient(
+      circle at bottom,
+      rgba(255, 105, 180, 1) 0%,
+      rgba(255, 105, 180, 0) 50%
+    );
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  background-blend-mode: overlay;
+} */
+
+
+@layer utilities {
+  .animate-slide-up1 {
+    animation: slide-up1 0.5s ease-out forwards;
+  }
+  .animate-slide-up2 {
+    animation: slide-up2 1s ease-out forwards;
+  }
+  .animate-slide-up3 {
+    animation: slide-up3 1.3s ease-out forwards;
+  }
+
+  @keyframes slide-up1 {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-up2 {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-up3 {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+/* .headerButton:hover{
+  color: #000;
+  border-radius: 0.125rem; 
+  padding-top: 1px; 
+  padding-bottom: 1px;
+  font-weight: 500; 
+  background-image: linear-gradient(to bottom right, #00ff00, #0000ff, #800080); 
+} */
+.glass {
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 8px 32px 0 rgba(129, 131, 152, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+.feature-glass {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  transition: all 500ms ease-in-out;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+.feature-glass:hover {
+  box-shadow: 0 2px 12px 0 rgba(129, 131, 152, 0.37);
+  scale: 1.04;
+}
+.nav-container-height {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: height 0.3s ease;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 8px 32px 0 rgba(129, 131, 152, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* .hover\:show-arrow:hover .h-5 {
+  opacity: 1;
+  right: 2rem;
+} */
+.get-started-button {
+  width: 120px; /* Initial width */
+}
+
+.get-started-button:hover {
+  width: 140px; /* Width on hover */
+}
+.arrow-icon {
+  display: none;
+}
+.get-started-button:hover .arrow-icon {
+  opacity: 1;
+  right: 10px;
+  display: block;
+}
+
+/* animate slide  */
+
+/* styles.css */
+
+@keyframes left-in {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.left-in {
+  animation: left-in 1s ease-out forwards;
+}
+@keyframes right-in {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.right-in {
+  animation: right-in 1s ease-out forwards;
+}
+
+.highlighted {
+  background-color: #f0f0f0; /* Example background color */
+  color: #333; /* Example text color */
+  /* Add any other styles you want to apply */
+}
+
+@keyframes left2-in {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.left2-in {
+  animation: left2-in 1.4s ease-out forwards;
+}
+@keyframes right2-in {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.right2-in {
+  animation: right2-in 1.4s ease-out forwards;
+}
+
+.gradient {
+  background: rgb(153, 20, 255);
+  background: -moz-linear-gradient(
+    52deg,
+    rgba(153, 20, 255, 0.144) 0%,
+    rgba(3, 9, 29, 1) 23%
+  );
+  background: -webkit-linear-gradient(
+    52deg,
+    rgba(153, 20, 255, 0.144) 0%,
+    rgba(3, 9, 29, 1) 23%
+  );
+  background: linear-gradient(
+    52deg,
+    rgba(153, 20, 255, 0.144) 0%,
+    rgba(3, 9, 29, 1) 23%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9914ff",endColorstr="#03091d",GradientType=1);
+}
