@@ -106,13 +106,17 @@ const Features = () => {
   ];
 
   return (
-    <div ref={containerRef} className="gradient">
-      <div className="grid p-5  max-w-[1440px] m-auto py-20  md:grid-cols-2 ml:p-0 md:py-20">
-        <div className={`opacity-0 text-center md:text-left ${isVisible ? "track-right-in" : ""}`}>
+    <div ref={containerRef} className="gradient ">
+      <div className="grid p-5  gap-4  min-h-[100vh] max-w-[1440px] m-auto py-20  md:grid-cols-2 ml:p-0 md:py-20">
+        <div
+          className={`opacity-0 text-center md:text-left  flex flex-col items-center md:items-start justify-center ${
+            isVisible ? "track-right-in" : ""
+          }`}
+        >
           <p className="bg-[#151531] text-[#535a8a] p-2 rounded-md inline font-medium">
             AI POWERED BUZ SOLUTIONS
           </p>
-          <h2 className="text-white text-[50px]">
+          <h2 className="text-white text-[50px] md:text-[70px]">
             Meet your new <br /> intelligent buz
           </h2>
           <p className="text-[50px] font-medium bg-gradient-to-br from-green-400 via-blue-600 to-purple-600 text-transparent bg-clip-text">
@@ -132,22 +136,51 @@ const Features = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 pt-5 md:pt-0 md:grid-cols-3 gap-5">
+        <div className="grid  grid-cols-2 pt-5 md:pt-0 lg:grid-cols-3 self-center gap-5">
           {items.map((item, index) => (
+            // <div
+            //   key={index}
+            //   ref={(el) => (containerRefs.current[index] = el)}
+            //   className={`flex   flex-col justify-center items-center feature-glass rounded-[15%] transform transition-transform duration-500 ${
+            //     isIcons[index] ? "scale-100" : "scale-0"
+            //   }`}
+            //   style={{
+            //     animation: "borderAnimation 4s linear infinite", // Adjust duration and timing function as needed
+            //     border: "1px solid", // Adjust border size as needed
+            //   }}
+            // >
+            //   <div
+            //     className={`h-[100px] w-[100px] rounded-[50%] flex justify-center items-center mt-5`}
+            //     style={{ backgroundColor: item.bgColor }}
+            //   >
+            //     {item.icon}
+            //   </div>
+            //   <p className="text-white mb-5 font-semibold mt-5">{item.text}</p>
+            // </div>
             <div
               key={index}
               ref={(el) => (containerRefs.current[index] = el)}
-              className={`flex flex-col justify-center items-center feature-glass rounded-[15%] transform transition-transform duration-500 ${
+              className={`relative  max-w-[250px]  h-[250px] flex flex-col justify-center items-center feature-glass  rounded-[15%] transform transition-transform duration-500 ${
                 isIcons[index] ? "scale-100" : "scale-0"
               }`}
             >
               <div
-                className={`h-[100px] w-[100px] rounded-[50%] flex justify-center items-center mt-5`}
+                className={`absolute  inset-0 rounded-[15%] border-1 animate-borderAnimation`}
+                style={{
+                  content: '""',
+                  boxShadow: "0 0 10px red", // Initial shadow color
+                  animation: "borderAnimation 4s linear infinite",
+                }}
+              ></div>
+              <div
+                className={`relative h-[100px] w-[100px] rounded-[50%] flex justify-center items-center mt-5`}
                 style={{ backgroundColor: item.bgColor }}
               >
                 {item.icon}
               </div>
-              <p className="text-white mb-5 font-semibold mt-5">{item.text}</p>
+              <p className="relative text-white mb-5 font-semibold mt-5">
+                {item.text}
+              </p>
             </div>
           ))}
         </div>

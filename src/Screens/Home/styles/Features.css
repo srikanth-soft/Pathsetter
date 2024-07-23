@@ -23,3 +23,29 @@
   .scale-100 {
     transform: scale(1);
   }
+
+
+  /* box border animations  */
+
+  @keyframes borderAnimation {
+    0% {
+      border-color: red;
+      box-shadow: 0 0 10px red;
+    }
+    25% {
+      border-color: blue;
+      box-shadow: 0 0 10px blue;
+    }
+    50% {
+      border-color: green;
+      box-shadow: 0 0 10px green;
+    }
+    75% {
+      border-color: yellow;
+      box-shadow: 0 0 10px yellow;
+    }
+    100% {
+      border-color: red;
+      box-shadow: 0 0 10px red;
+    }
+  }
