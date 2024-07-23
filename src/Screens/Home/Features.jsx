@@ -106,7 +106,7 @@ const Features = () => {
   ];
 
   return (
-    <div ref={containerRef} className="gradient ">
+    <div ref={containerRef} >
       <div className="grid p-5  gap-4  min-h-[100vh] max-w-[1440px] m-auto py-20  md:grid-cols-2 ml:p-0 md:py-20">
         <div
           className={`opacity-0 text-center md:text-left  flex flex-col items-center md:items-start justify-center ${

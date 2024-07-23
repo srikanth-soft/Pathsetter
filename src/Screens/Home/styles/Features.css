@@ -29,23 +29,23 @@
 
   @keyframes borderAnimation {
     0% {
-      border-color: red;
-      box-shadow: 0 0 10px red;
+      border-color: rgba(255, 0, 0, 0.467);
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.467);
     }
     25% {
-      border-color: blue;
-      box-shadow: 0 0 10px blue;
+      border-color: rgba(0, 0, 255, 0.467);
+      box-shadow: 0 0 10px rgba(0, 0, 255, 0.467);
     }
     50% {
-      border-color: green;
-      box-shadow: 0 0 10px green;
+      border-color: rgba(0, 128, 0, 0.467);
+      box-shadow: 0 0 10px rgba(0, 128, 0, 0.467);
     }
     75% {
-      border-color: yellow;
-      box-shadow: 0 0 10px yellow;
+      border-color: rgba(255, 255, 0, 0.467);
+      box-shadow: 0 0 10px rgba(255, 255, 0, 0.467);
     }
     100% {
-      border-color: red;
-      box-shadow: 0 0 10px red;
+      border-color: rgba(255, 0, 0, 0.467);
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.467);
     }
   }

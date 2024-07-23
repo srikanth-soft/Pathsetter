@@ -32,7 +32,7 @@ const TrackUser = () => {
   }, []);
   
   return (
-    <div className="track-gradient ">
+    <div >
        <div ref={containerRef} className={`grid mt-10  md:grid-cols-2 gap-10 p-5 md:p-10 max-w-[1440px] m-auto mb-10 border-[#1e253f] border-[0.2px] rounded-lg relative overflow-hidden track-radial-gradient`}>
       <div className={`border-[#1e253f] border-[0.2px] rounded-lg p-5 md:p-10 text-white opacity-0 ${isVisible ? "track-right-in" : ""} `}>
 
@@ -68,7 +68,7 @@ const TrackUser = () => {
               </li>
             </ul>
           </div>
-          <div className="flex items-center gap-3">
+          {/* <div className="flex items-center gap-3">
             <div className="rounded-[50%]  bg-slate-800 h-[30px] w-[30px] flex justify-center items-center">
               <p className="text-[15px]">PJ</p>
             </div>
@@ -76,7 +76,7 @@ const TrackUser = () => {
               <p>Penny Jen</p>
               <p className="text-[7px] text-[#8d8d8d]">2 hours ago</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className={`opacity-0 ${isVisible ? "track-left-in" : ""} `}>
