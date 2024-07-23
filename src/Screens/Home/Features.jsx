@@ -160,7 +160,7 @@ const Features = () => {
             <div
               key={index}
               ref={(el) => (containerRefs.current[index] = el)}
-              className={`relative  max-w-[250px]  h-[250px] flex flex-col justify-center items-center feature-glass  rounded-[15%] transform transition-transform duration-500 ${
+              className={`relative  max-w-[250px]   flex flex-col justify-center items-center feature-glass  rounded-[15%] transform transition-transform duration-500 ${
                 isIcons[index] ? "scale-100" : "scale-0"
               }`}
             >
