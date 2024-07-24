@@ -26,26 +26,14 @@
 
 
   /* box border animations  */
-
-  @keyframes borderAnimation {
-    0% {
-      border-color: rgba(255, 0, 0, 0.467);
-      box-shadow: 0 0 10px rgba(255, 0, 0, 0.467);
-    }
-    25% {
-      border-color: rgba(0, 0, 255, 0.467);
-      box-shadow: 0 0 10px rgba(0, 0, 255, 0.467);
-    }
-    50% {
-      border-color: rgba(0, 128, 0, 0.467);
-      box-shadow: 0 0 10px rgba(0, 128, 0, 0.467);
-    }
-    75% {
-      border-color: rgba(255, 255, 0, 0.467);
-      box-shadow: 0 0 10px rgba(255, 255, 0, 0.467);
-    }
-    100% {
-      border-color: rgba(255, 0, 0, 0.467);
-      box-shadow: 0 0 10px rgba(255, 0, 0, 0.467);
-    }
+  .feature-glass {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    transition: all 500ms ease-in-out;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  .feature-glass:hover {
+    box-shadow: 0 2px 12px 0 rgba(129, 131, 152, 0.37);
+    scale: 1.04;
   }

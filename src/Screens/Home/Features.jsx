@@ -1,7 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import Logo from "../../assets/images/logo.jpeg";
-import settings from "../../assets/images/settingsv2.png";
-import InteractiveSphere from "./InteractiveSphere";
 import { IoMdSettings } from "react-icons/io";
 import { FaUnlock } from "react-icons/fa";
 import { AiFillThunderbolt } from "react-icons/ai";
@@ -138,25 +135,6 @@ const Features = () => {
 
         <div className="grid  grid-cols-2 pt-5 md:pt-0 lg:grid-cols-3 self-center gap-5">
           {items.map((item, index) => (
-            // <div
-            //   key={index}
-            //   ref={(el) => (containerRefs.current[index] = el)}
-            //   className={`flex   flex-col justify-center items-center feature-glass rounded-[15%] transform transition-transform duration-500 ${
-            //     isIcons[index] ? "scale-100" : "scale-0"
-            //   }`}
-            //   style={{
-            //     animation: "borderAnimation 4s linear infinite", // Adjust duration and timing function as needed
-            //     border: "1px solid", // Adjust border size as needed
-            //   }}
-            // >
-            //   <div
-            //     className={`h-[100px] w-[100px] rounded-[50%] flex justify-center items-center mt-5`}
-            //     style={{ backgroundColor: item.bgColor }}
-            //   >
-            //     {item.icon}
-            //   </div>
-            //   <p className="text-white mb-5 font-semibold mt-5">{item.text}</p>
-            // </div>
             <div
               key={index}
               ref={(el) => (containerRefs.current[index] = el)}
@@ -164,14 +142,7 @@ const Features = () => {
                 isIcons[index] ? "scale-100" : "scale-0"
               }`}
             >
-              <div
-                className={`absolute  inset-0 rounded-[15%] border-1 animate-borderAnimation`}
-                style={{
-                  content: '""',
-                  boxShadow: "0 0 10px red", // Initial shadow color
-                  animation: "borderAnimation 4s linear infinite",
-                }}
-              ></div>
+              
               <div
                 className={`relative h-[100px] w-[100px] rounded-[50%] flex justify-center items-center mt-5`}
                 style={{ backgroundColor: item.bgColor }}

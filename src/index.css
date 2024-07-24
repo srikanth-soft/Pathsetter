@@ -161,17 +161,7 @@ h1{
   -webkit-backdrop-filter: blur(4px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
-.feature-glass {
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  transition: all 500ms ease-in-out;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
-}
-.feature-glass:hover {
-  box-shadow: 0 2px 12px 0 rgba(129, 131, 152, 0.37);
-  scale: 1.04;
-}
+
 .nav-container-height {
   position: fixed;
   top: 0;

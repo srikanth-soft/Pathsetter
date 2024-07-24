@@ -1,6 +1,4 @@
 import { useEffect, useRef } from "react";
-import InteractiveSphere from "./InteractiveSphere";
-import Logo from "../../assets/images/logo.jpeg";
 
 export const Spotlight = () => {
   const cardsContainer = useRef(null);

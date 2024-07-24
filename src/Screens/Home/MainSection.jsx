@@ -9,21 +9,12 @@ import ToggleMenu from "./ToggleMenu";
 import MainSVG3 from "./MainSVG3";
 const MainSection = () => {
   const [animated, setAnimated] = useState(false);
-  const [scrollY, setScrollY] = useState(0);
   useEffect(() => {
     const timeout = setTimeout(() => {
       setAnimated(true);
     }, 100);
-    const handleScroll = () => {
-      console.log();
-      if (window.innerWidth > 500) {
-        setScrollY(window.scrollY);
-      }
-    };
 
-    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
       clearTimeout(timeout);
     };
   }, []);
@@ -49,7 +40,7 @@ const MainSection = () => {
 
         <ToggleMenu></ToggleMenu>
 
-        <ScrollTopButton></ScrollTopButton>
+        {/* <ScrollTopButton></ScrollTopButton> */}
         <FixedNavbar></FixedNavbar>
         <div
           className={`text-[13px] md:text-[20px] flex gap-2 items-center opacity-0 ${
@@ -96,9 +87,6 @@ const MainSection = () => {
           className={`text-[10px] md:text-[20px] text-center  opacity-0  ${
             animated ? "animate-slide-up3" : ""
           } `}
-          style={{
-            marginBottom: -scrollY,
-          }}
         >
           Take your business growth and experience to the <br /> next level and
           boost your productivity

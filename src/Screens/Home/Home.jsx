@@ -19,7 +19,7 @@ const Home = () => {
 
     <div className="max-w-[1350px] m-auto">
       <CompanySection></CompanySection>
-      <Spotlight></Spotlight>
+      {/* <Spotlight></Spotlight> */}
       <Footer></Footer>
     </div>
   </div>

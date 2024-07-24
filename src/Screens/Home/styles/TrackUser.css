@@ -41,3 +41,21 @@ background: -webkit-linear-gradient(150deg, rgba(153,20,255,0) 85%, rgba(163, 47
 background: linear-gradient(140deg, rgba(153,20,255,0) 90%, rgba(255, 255, 255, 0.084) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9914ff",endColorstr="#ffffff",GradientType=1);
 }
+
+.gradient-text {
+  background-size: 300% 300%;
+  animation: gradientAnimation 3s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
