@@ -72,7 +72,6 @@ const Products = () => {
         >
           Product 2
         </button>
-
       </div>
 
       <div
@@ -91,7 +90,7 @@ const Products = () => {
                 isVisible ? "right-in" : ""
               }`}
             >
-              <p className="text-2xl mb-2">Product 1</p>
+              <p className="text-3xl mb-2">Product 1</p>
               <p className="text-justify">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consequuntur nesciunt unde facilis? Inventore nam, quos ut quae
@@ -104,9 +103,12 @@ const Products = () => {
               </p>
               <button className="mt-2">Learn more &gt;</button>
             </div>
-            <div className={`opacity-0 ${isVisible ? "left-in" : ""}`}>
-              <img src={Product1} alt="product 1" />
-              {/* <CodeSnippet codeString={codeString2} /> */}
+            <div className={`flex justify-center items-center opacity-0 ${isVisible ? "left-in" : ""}`}>
+              <img
+                src={Product1}
+                className="rounded-[10px] h-auto max-h-[300px] object-contain "
+                alt="product 1"
+              />
             </div>
           </div>
         </div>
@@ -115,11 +117,18 @@ const Products = () => {
           style={{ transitionDuration: "500ms" }}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 text-white">
-            <div>
-            <img src={Product2} alt="product 1" />
+            <div className="flex justify-center items-center">
+              <img
+              style={{borderRadius: "5px"}}
+                height={"300px"}
+                className="rounded-[10px] h-auto max-h-[300px] object-contain "
+
+                src={Product2}
+                alt="product 2"
+              />
             </div>
             <div className="flex justify-center flex-col items-start">
-              <p className="text-2xl mb-2">Product 2</p>
+              <p className="text-3xl mb-2">Product 2</p>
               <p className="text-justify">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consequuntur nesciunt unde facilis? Inventore nam, quos ut quae
