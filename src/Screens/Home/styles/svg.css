@@ -26,3 +26,38 @@
     animation: dash2 20s linear infinite; 
   }
   
+
+  /* footer lines css  */
+
+  .svg-animation path {
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 1200;
+    transition: stroke-dashoffset 2s ease-in-out;
+    /* Ensure the stroke color is visible after animation */
+    stroke: #5e6374;
+  }
+  
+  /* Define the keyframes for the animation */
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  /* Add the animation class to trigger the animation */
+  .svg-animation.animate path {
+    animation: dash 2s ease-in-out forwards;
+  }
+
+
+
+  @media screen and (max-width: 768px) {
+    .svg-animation path {
+      stroke-dasharray: 1200;
+      stroke-dashoffset: 1200;
+      transition: stroke-dashoffset 2s ease-in-out;
+      /* Ensure the stroke color is visible after animation */
+      stroke: #fff;
+    }
+    
+  }

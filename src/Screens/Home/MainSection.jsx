@@ -4,7 +4,9 @@ import { AiFillThunderbolt } from "react-icons/ai";
 import MainSVG from "./MainSVG";
 import logo from "../../assets/images/pathsetterLogo.png";
 import MainSVG2 from "./MainSVG2";
-import ScrollTopButton from "./ScrollTopButton";
+import bgPng from "../../assets/images/gradientPng.png";
+import bgTop from "../../assets/images/gradientTop.png";
+
 import ToggleMenu from "./ToggleMenu";
 import MainSVG3 from "./MainSVG3";
 const MainSection = () => {
@@ -19,7 +21,7 @@ const MainSection = () => {
     };
   }, []);
   return (
-    <div className="main-container relative">
+    <div className="relative ">
       <div className="h-[70vh] absolute left-[0] bottom-0">
         <MainSVG></MainSVG>
       </div>
@@ -31,8 +33,20 @@ const MainSection = () => {
       </div>
       <div
         id="mainContainer"
-        className="h-[100vh] max-w-[1350px] m-auto  w-full flex flex-col justify-center items-center relative text-white  overflow-hidden"
+        className="h-[100vh] max-w-[1350px] mx-auto w-full flex flex-col justify-center items-center relative text-white"
       >
+        <img
+          width="100%"
+          src={bgTop}
+          alt=""
+          className="absolute left-1/2 transform -translate-x-1/2 top-[-25%] md:top-[-70%] w-full"
+        />
+
+        <img
+          src={bgPng}
+          alt=""
+          className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-full md:w-4/5 md:top-1/2"
+        />
         <div className="absolute left-5 top-2 flex gap-3 items-center">
           <img src={logo} className="h-[30px]"></img>
           <p className="text-[40px] font-medium">Pathsetter</p>

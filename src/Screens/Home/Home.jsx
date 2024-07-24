@@ -7,6 +7,7 @@ import InfiniteSlider from './InfiniteSlider'
 import CompanySection from './CompanySection'
 import { Spotlight } from './SpotLight'
 import Footer from './Footer'
+import FooterLines from './FooterLines'
 
 const Home = () => {
   return (
@@ -17,11 +18,9 @@ const Home = () => {
     <Products></Products>
     <InfiniteSlider></InfiniteSlider>
 
-    <div className="max-w-[1350px] m-auto">
       <CompanySection></CompanySection>
-      {/* <Spotlight></Spotlight> */}
+      <FooterLines></FooterLines>
       <Footer></Footer>
-    </div>
   </div>
   )
 }
