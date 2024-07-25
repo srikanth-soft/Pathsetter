@@ -149,10 +149,10 @@ const Features = () => {
         {items.map((item, i) => {
           return (
             <div
-              className={`w-[145px] h-[145px] flex flex-col justify-center items-center svg-glass  rounded-[15%] image-end ${item.position}`}
+              className={`w-[135px] h-[135px] flex flex-col justify-center items-center svg-glass  rounded-[15%] image-end ${item.position}`}
             >
               <div
-                className={`relative h-[50px] w-[50px] rounded-[50%] flex justify-center items-center mt-5`}
+                className={`relative h-[50px] w-[50px] rounded-[50%] flex justify-center items-center mt-5 backdrop-blur-sm`}
                 style={{ backgroundColor: item.bgColor }}
               >
                 {item.icon}
@@ -163,49 +163,14 @@ const Features = () => {
             </div>
           );
         })}
-
-        <svg
-          className="w-full h-auto"
-          viewBox="0 0 739 314"
-          fill="none"
-        >
-          <path
-            className="line"
-            strokeWidth={2}
-            d="M125 1C125 1 209 1 212 1C215 1 216.792 1.56822 219 3C221.208 4.43178 235.122 17.6091 284 64L328 107.5"
-            stroke="white"
-          />
-          <path
-            className="line"
-            strokeWidth={2}
-            d="M613 1C613 1 529 1 526 1C523 1 521.208 1.56822 519 3C516.792 4.43178 502.878 17.6091 454 64L410 107.5"
-            stroke="white"
-          />
-          <path
-            className="line"
-            strokeWidth={2}
-            d="M613 313.5C613 313.5 529 313.5 526 313.5C523 313.5 521.208 312.932 519 311.5C516.792 310.068 502.878 296.891 454 250.5L410 207"
-            stroke="white"
-          />
-          <path
-            className="line"
-            strokeWidth={2}
-            d="M125 313.5C125 313.5 209 313.5 212 313.5C215 313.5 216.792 312.932 219 311.5C221.208 310.068 235.122 296.891 284 250.5L328 207"
-            stroke="white"
-          />
-          <path
-            className="line"
-            strokeWidth={2}
-            d="M0 157H302.5"
-            stroke="white"
-          />
-          <path
-            className="line"
-            strokeWidth={2}
-            d="M738.5 159H436"
-            stroke="white"
-          />
-        </svg>
+          <svg width="343" height="239" viewBox="0 0 343 239" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path className="line" strokeWidth={2} d="M0 1C0 1 59.1724 1 61.2857 1C63.399 1 64.6611 1.43217 66.2167 2.52113C67.7724 3.61008 77.5738 13.6322 112.005 48.9155L143 82" stroke="white"/>
+          <path className="line" strokeWidth={2} d="M343 1C343 1 284.241 1 282.143 1C280.044 1 278.791 1.43217 277.246 2.52113C275.702 3.61008 265.969 13.6322 231.778 48.9155L201 82" stroke="white"/>
+          <path className="line" strokeWidth={2} d="M343 238C343 238 284.241 238 282.143 238C280.044 238 278.791 237.568 277.246 236.479C275.702 235.39 265.969 225.368 231.778 190.085L201 157" stroke="white"/>
+          <path className="line" strokeWidth={2} d="M0 238C0 238 59.1724 238 61.2857 238C63.399 238 64.6611 237.568 66.2167 236.479C67.7724 235.39 77.5738 225.368 112.005 190.085L143 157" stroke="white"/>
+          <path className="line" strokeWidth={2} d="M0 119L125 119" stroke="white"/>
+          <path className="line" strokeWidth={2} d="M343 119L219 121" stroke="white"></path>
+          </svg>
       </div>
     );
   };
